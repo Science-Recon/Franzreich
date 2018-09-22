@@ -1,0 +1,13 @@
+﻿l_english: 
+ HUN_EMPIRE_monarchist:0 "Austria-Hungary"
+ HUN_EMPIRE_monarchist_DEF:0 "Austria-Hungary"
+ HUN_EMPIRE_monarchist_ADJ:0 "Austro-Hungarian"
+ GER_german_empire_monarchist:0 "German Empire"
+ GER_german_empire_monarchist_DEF:0 "the German Empire"
+ GER_german_empire_monarchist_ADJ:0 "German"
+ SOV_RUS_monarchist:0 "Russian Empire"
+ SOV_RUS_monarchist_DEF:0 "the Russian Empire"
+ SOV_RUS_monarchist_ADJ:0 "Russian"
+ ITA_monarchist:0 "Kingdom of Italy"
+ ITA_monarchist_DEF:0 "the Kingdom of Italy"
+ ITA_monarchist_ADJ:0 "Italian"

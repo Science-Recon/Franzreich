@@ -1,0 +1,62 @@
+
+state={
+	id=28
+	name="STATE_28" # Elass-Lothringen
+	manpower = 1915600
+	
+	state_category = city
+	resources={
+		steel=100 # was: 236
+	}
+
+	history={
+		owner = GER
+		victory_points = { 678 5 }
+		victory_points = { 9503 5 }
+		victory_points = { 9559 10 }
+		buildings = {
+			infrastructure = 7
+			industrial_complex = 3
+			1346 = {
+				bunker = 10
+
+			}
+			678 = {
+				bunker = 10
+
+			}
+			3629 = {
+				bunker = 10
+
+			}
+			6529 = {
+				bunker = 10
+
+			}
+			9503 = {
+				bunker = 2
+
+			}
+			9559 = {
+				bunker = 10
+
+			}
+			11502 = {
+				bunker = 10
+
+			}
+			anti_air_building = 5
+			air_base = 5
+
+		}
+		set_state_name = "Elsaß-Lothringen"
+		set_province_name = { id = 9503 name = "Straßburg" }
+		set_province_name = { id = 678 name = "Mulhausen" }
+		add_core_of = GER
+		add_claim_by = FRA
+	}
+
+	provinces={
+		549 678 1346 3629 6529 9503 9559 11502 
+	}
+}

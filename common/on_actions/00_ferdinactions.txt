@@ -1,0 +1,78 @@
+on_actions = {
+	on_government_change = {
+		effect = {
+			if = {
+				limit = {
+					has_cosmetic_tag = SOV_RUS
+					NOT = {
+						has_government = monarchist
+					}
+				}
+				drop_cosmetic_tag = yes
+			}
+			if = {
+				limit = {
+					has_cosmetic_tag = SOV_RUS_FED
+					NOT = {
+						has_government = democratic
+					}
+				}
+				drop_cosmetic_tag = yes
+			}
+			if = {
+				limit = {
+					has_cosmetic_tag = GER_german_empire
+					NOT = {
+						has_government = monarchist
+					}
+				}
+				drop_cosmetic_tag = yes
+			}
+			if = {
+				limit = {
+					has_cosmetic_tag = HUN_empire
+					NOT = {
+						has_government = monarchist
+					}
+				}
+				drop_cosmetic_tag = yes
+			}
+			if = {
+				limit = {
+					original_tag = SOV
+					NOT = { has_cosmetic_tag = SOV_RUS }
+					has_government = monarchist
+				}
+				set_cosmetic_tag = SOV_RUS
+			}
+			if = {
+				limit = {
+					original_tag = SOV
+					NOT = { has_cosmetic_tag = SOV_RUS_FED }
+					has_government = democratic
+				}
+				set_cosmetic_tag = SOV_RUS_FED
+			}
+			if = {
+				limit = {
+					original_tag = GER
+					NOT = {
+						has_cosmetic_tag = GER_german_empire
+					}
+					has_government = monarchist
+				}
+				set_cosmetic_tag = GER_german_empire
+			}
+			if = {
+				limit = {
+					original_tag = AUS
+					NOT = {
+						has_cosmetic_tag = HUN_empire
+					}
+					has_government = monarchist
+				}
+				set_cosmetic_tag = HUN_empire
+			}
+		}
+	}
+}

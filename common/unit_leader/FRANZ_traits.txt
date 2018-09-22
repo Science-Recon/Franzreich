@@ -1,0 +1,34 @@
+leader_traits = {
+
+	
+##################################
+# Common Traits
+##################################
+	
+
+	german_nationalist = {
+		type = all
+		trait_type = personality_trait
+		new_commander_weight = {
+			factor = 0  # Scripted Hitler only
+		}
+	}
+
+
+##################################
+# Field Marshal traits.
+##################################
+	
+##################################
+# Corps Commander traits.
+##################################
+	
+##################################
+# Corps Commander assignabme traits.
+##################################
+
+##################################
+# Naval traits.
+##################################
+
+}
