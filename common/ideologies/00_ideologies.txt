@@ -35,8 +35,10 @@ ideologies = {
 			can_guarantee_other_ideologies = yes
 		}
 		
-		war_impact_on_world_tension = -1.0
-		faction_impact_on_world_tension = -0.1
+		can_host_government_in_exile = yes
+		
+		war_impact_on_world_tension = 0.25		# no major danger, remember this this the 40s!
+		faction_impact_on_world_tension = 0.1
 		
 		modifiers = {
 			generate_wargoal_tension = 1.00
@@ -84,6 +86,8 @@ ideologies = {
 		}
 		
 		color = { 255 0 0 }
+		
+		can_host_government_in_exile = yes
 		
 		war_impact_on_world_tension = 0.75		#Commie less threatening
 		faction_impact_on_world_tension = 0.5
@@ -148,52 +152,6 @@ ideologies = {
 
 		ai_fascist = yes # uses the fascist AI behaviour
 	}
-
-	monarchist = {
-	
-		types = {
-		
-			imperialism = {
-			}
-			
-			absolutism = {
-			}
-			
-			limited_constitutionalism = {
-			}
-			
-			absolute_elective = {
-			}
-		}
-		
-		dynamic_faction_names = {
-			"FACTION_NAME_MONARCHIST_1"
-			"FACTION_NAME_MONARCHIST_2"
-			"FACTION_NAME_MONARCHIST_3"
-			"FACTION_NAME_MONARCHIST_4"
-			"FACTION_NAME_MONARCHIST_5"
-		}
-		
-		color = { 132 19 93 }
-		
-		war_impact_on_world_tension = 1.0			#evil!
-		faction_impact_on_world_tension = 1.0
-		
-		rules = {
-			can_force_government = no
-			can_guarantee_other_ideologies = yes
-			can_send_volunteers = yes
-			can_puppet = yes
-		}
-		
-		modifiers = {
-			political_power_gain = 0.1
-			opinion_gain_monthly_same_ideology_factor = 0.5
-			army_morale_factor = 0.05
-		}
-
-		ai_fascist = yes # uses the fascist AI behaviour
-	}
 	
 	neutrality = {
 	
@@ -249,5 +207,53 @@ ideologies = {
 		can_collaborate = yes
 
 		ai_neutral = yes # 
+	}
+
+	monarchist = {
+	
+		types = {
+		
+			imperialism = {
+			}
+			
+			absolutism = {
+			}
+			
+			limited_constitutionalism = {
+			}
+			
+			absolute_elective = {
+			}
+		}
+		
+		dynamic_faction_names = {
+			"FACTION_NAME_MONARCHIST_1"
+			"FACTION_NAME_MONARCHIST_2"
+			"FACTION_NAME_MONARCHIST_3"
+			"FACTION_NAME_MONARCHIST_4"
+			"FACTION_NAME_MONARCHIST_5"
+		}
+		
+		color = { 132 19 93 }
+		
+		can_host_government_in_exile = yes
+		
+		war_impact_on_world_tension = 1.0			#evil!
+		faction_impact_on_world_tension = 1.0
+		
+		rules = {
+			can_force_government = no
+			can_guarantee_other_ideologies = yes
+			can_send_volunteers = yes
+			can_puppet = yes
+		}
+		
+		modifiers = {
+			political_power_gain = 0.1
+			opinion_gain_monthly_same_ideology_factor = 0.5
+			army_morale_factor = 0.05
+		}
+
+		ai_fascist = yes # uses the fascist AI behaviour
 	}
 }

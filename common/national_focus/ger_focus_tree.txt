@@ -1,0 +1,109 @@
+focus_tree = {
+	id = ger_focus_tree
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = GER
+		}
+	}
+	default = no
+	focus = {
+		id = GER_ties_to_UK
+		icon = GFX_focus_chi_british_cooperation
+		cost = 10.00
+		mutually_exclusive = {
+			focus = GER_radicalism
+		}
+		x = 27
+		y = 0
+			completion_reward = {
+					add_political_power = 100
+					add_timed_idea = {
+							idea = rising_democracy
+							days = 3600
+						}
+				}
+
+	}
+	focus = {
+		id = GER_radicalism
+		icon = GFX_goal_generic_demand_territory
+		cost = 10.00
+		mutually_exclusive = {
+			focus = GER_ties_to_UK
+		}
+		x = 36
+		y = 0
+			completion_reward = {
+					add_popularity = {
+							ideology = communism
+							popularity = 0.1
+						}
+				}
+
+	}
+	focus = {
+		id = GER_modernise_wehrmacht
+		icon = GFX_focus_ger_oppose_hitler
+		cost = 10.00
+		x = 17
+		y = 0
+
+	}
+	focus = {
+		id = GER_new_constitution
+		icon = GFX_focus_generic_treaty
+		cost = 10.00
+		prerequisite = {
+			focus = GER_ties_to_UK
+		}
+		x = 27
+		y = 2
+			available = {
+					NOT = {
+							has_country_leader = {
+									name = "Wilhelm II"
+									ruling_only = yes
+								}
+						}
+				}
+			completion_reward = {
+					set_politics = {
+							ruling_party = democratic
+							elections_allowed = yes
+						}
+					add_popularity = {
+							ideology = democratic
+							popularity = 0.1
+						}
+				}
+
+	}
+	focus = {
+		id = GER_march_on_berlin
+		icon = GFX_focus_generic_support_the_left_right
+		cost = 10.00
+		prerequisite = {
+			focus = GER_radicalism
+		}
+		x = 34
+		y = 2
+			available = {
+					is_puppet = no
+					has_government = monarchist
+				}
+			completion_reward = {
+					custom_effect_tooltip = GER_oppose_hitler_civil_war
+					add_political_power = 120
+					add_named_threat = {
+							threat = 5
+							name = GER_oppose_hitler
+						}
+					country_event = {
+							id = frz_germany.1
+						}
+				}
+
+	}
+}
